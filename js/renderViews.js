@@ -4,7 +4,7 @@ const view = {
 
 export function getViews(callback) {
 	try {
-		fetch('/views/expenseCard.html')
+		fetch('views/expenseCard.html')
 			.then(r => r.text())
 			.then(r => {
 				view.expenseCard = r;
