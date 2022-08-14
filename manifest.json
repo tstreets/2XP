@@ -1,0 +1,13 @@
+{
+	"name": "Experience Expenses",
+	"short_name": "2XP",
+	"description": "This is a web app used for tracking regular occuring expenses.",
+	"icons": [
+		{
+			"src": "castle-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	],
+	"display": "standalone"
+}

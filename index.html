@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Experience Expenses</title>
+		<meta name="viewport" content="width=device-width" />
+		<link rel="shortcut icon" href="castle.ico" type="image/x-icon" />
+		<link rel="manifest" href="manifest.json" />
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+	<body>
+		<h1>Experience Expenses</h1>
+
+		<details id="newExpenseAccordion">
+			<summary>New Expense</summary>
+			<form id="newExpenseForm" `>
+				<fieldset>
+					<div>
+						<label for="expenseName">Expense Name:</label>
+						<input id="expenseName" name="name" />
+					</div>
+					<div>
+						<label for="expenseAmount">Expense Amount:</label>
+						<input id="expenseAmount" name="amount" type="number" />
+					</div>
+					<div>
+						<label for="expenseDate">Last/Next Expense Date:</label>
+						<input id="expenseDate" name="date" type="date" />
+					</div>
+					<div>
+						<label for="expenseFrequency">Expense Frequency:</label>
+						<select id="expenseFrequency" name="frequency">
+							<option value="Weekly">Weekly</option>
+							<!-- <option value="Bi-Weekly">Bi-Weekly</option> -->
+							<option value="Monthly">Monthly</option>
+							<!-- <option value="Bi-Monthly">Bi-Monthly</option> -->
+							<!-- <option value="Quarterly">Quarterly</option> -->
+							<option value="Semi-Annually">Semi-Annually</option>
+							<option value="Annually">Annually</option>
+						</select>
+					</div>
+					<div class="row">
+						<button class="green">
+							Add Expense
+							<i class="plus white"></i>
+						</button>
+					</div>
+				</fieldset>
+			</form>
+		</details>
+
+		<details id="rangeAccordion">
+			<summary>Expense Range</summary>
+			<form id="rangeForm">
+				<fieldset>
+					<div>
+						<label for="range">Range To:</label>
+						<select id="range" name="range">
+							<option selected value="End of Week">
+								End of Week
+							</option>
+							<!-- <option value="End of Month">End of Month</option> -->
+							<option value="All Week">All Week</option>
+							<!-- <option value="All Month">All Month</option> -->
+						</select>
+					</div>
+				</fieldset>
+			</form>
+		</details>
+
+		<div id="content"></div>
+		<script src="js/app.js" type="module"></script>
+	</body>
+</html>
